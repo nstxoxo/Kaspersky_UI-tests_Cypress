@@ -1,0 +1,22 @@
+{
+  "name": "kaspersky_ui-tests_cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nstxoxo/Kaspersky_UI-tests_Cypress.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nstxoxo/Kaspersky_UI-tests_Cypress/issues"
+  },
+  "homepage": "https://github.com/nstxoxo/Kaspersky_UI-tests_Cypress#readme",
+  "devDependencies": {
+    "cypress": "^12.5.1"
+  }
+}
