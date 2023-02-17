@@ -10,12 +10,7 @@ describe('example kaspersky app', () => {
     // We use the `cy.get()` command to get all elements that match the selector.
     // Then, we use `should` to assert that there are two matched items,
     // which are the two default items.
-    cy.get('.*=DarkGreenButton_inner').should('include.text', 'View Products')
-
-    // We can go even further and check that the default todos each contain
-    // the correct text. We use the `first` and `last` functions
-    // to get just the first and last matched elements individually,
-    // and then perform an assertion with `should`.
+    cy.get('div[class*=MastHead_withDelimiter]').should('include.text', 'Feel truly safe online with AI-driven protection against hackers and the latest viruses, ransomware and spyware.')
     cy.get('.todo-list li').first().should('have.text', 'Pay electric bill')
     cy.get('.todo-list li').last().should('have.text', 'Walk the dog')
   })
