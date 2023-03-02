@@ -1,5 +1,18 @@
 {
-  "name": "Using fixtures to represent data",
-  "email": "hello@cypress.io",
-  "body": "Fixtures are a great way to mock data for responses to routes"
+  "request": "Гарри Поттер и Тайная комната",
+  "bestsellers": "Бестселлеры",
+  "new": "Новинки",
+  "comingSoon": "Скоро в продаже",
+  "souvenirHeader": "Сувениры, галантерея, одежда" ,
+  "fiction": "Художественная литература",
+  "fantasyScienceFiction": "Фэнтези и фантастика",
+  "alreadyInCart": "Уже в корзине",
+  "help": "Помощь",
+  "delivery": "Доставка",
+  "payment": "Оплата",
+  "bonusProgram": "Бонусная программа",
+  "reference": "Справка",
+  "callRequest": "Закажите звонок",
+  "makeRequest": "Оформите заявку и оператор свяжется с вами"
+
 }
