@@ -1,7 +1,6 @@
 {
-  "name": "kaspersky_ui-tests_cypress",
+  "name": "oz_ui-tests_cypress",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "cypress:open": "npx cypress open",
@@ -11,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nstxoxo/Kaspersky_UI-tests_Cypress.git"
+    "url": "git+https://github.com/nstxoxo/OZ_UI-tests_Cypress"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nstxoxo/Kaspersky_UI-tests_Cypress/issues"
+    "url": "https://github.com/nstxoxo/OZ_UI-tests_Cypress/issues"
   },
-  "homepage": "https://github.com/nstxoxo/Kaspersky_UI-tests_Cypress#readme",
+  "homepage": "https://github.com/nstxoxo/OZ_UI-tests_Cypress#readme",
   "devDependencies": {
     "@cypress/xpath": "^2.0.3",
     "@shelex/cypress-allure-plugin": "^2.35.2",
@@ -26,5 +25,6 @@
   },
   "dependencies": {
     "allure-commandline": "^2.21.0"
-  }
+  },
+  "description": ""
 }

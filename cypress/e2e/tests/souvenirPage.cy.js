@@ -1,27 +1,27 @@
 import SouvenirPage from "../../pages/SouvenirPage";
 
-let userdata;
+let pagedata;
 let souvenirPage;
 
-describe("example ", () => {
+describe("Souvenir page tests", () => {
   beforeEach(() => {
     cy.visit("https://oz.by/souvenir/");
     souvenirPage = new SouvenirPage();
-    cy.fixture("example").then((data) => {
-      userdata = data;
+    cy.fixture("pagedata").then((data) => {
+      pagedata = data;
     });
   });
 
-  it("bestsellers", () => {
-    souvenirPage.checkBestsellers(userdata.bestsellers);
+  it("Bestsellers link is displayed", () => {
+    souvenirPage.checkBestsellers(pagedata.bestsellers);
   });
 
-  it("souvenir Header", () => {
-    souvenirPage.checkMainHeader(userdata.souvenirHeader);
+  it("Check Souvenir page header", () => {
+    souvenirPage.checkMainHeader(pagedata.souvenirHeader);
   });
 
-  it("bijouterie Header", () => {
-    souvenirPage.checkFilter(userdata.bijouterie);
-    souvenirPage.checkHeader(userdata.bijouterie);
+  it("Check bijouterie header", () => {
+    souvenirPage.checkFilter(pagedata.bijouterie);
+    souvenirPage.checkHeader(pagedata.bijouterie);
   });
 });

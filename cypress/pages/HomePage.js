@@ -2,7 +2,7 @@ import BasePage from "./BasePage";
 
 class HomePage extends BasePage {
   searchField = ".top-panel__search__input.ui-autocomplete-input";
-  searchBtn = "button[class='top-panel__search__btn']";
+  searchBtn = ".top-panel__search__btn__item";
   breadcrumbList = "li[itemprop='itemListElement']";
   weekBestsellers = ".mpgs-col-2";
   firstBookElement = ".listatic.li_0";
@@ -36,9 +36,11 @@ class HomePage extends BasePage {
   }
 
   selectDropdown() {
-    cy.get(this.dropdownBox)
+    cy.scrollTo(0, 500);
+    cy.get(this.dropdownBox, { timeout: 12_000 })
       .contains("Каталог товаров для дома")
-      .should("exist");
+      .should("be.visible")
+      .and("not.to.be.checked");
   }
 }
 

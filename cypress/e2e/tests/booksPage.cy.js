@@ -1,18 +1,19 @@
 import BooksPage from "../../pages/BooksPage";
 
-let userdata;
+let pagedata;
 let booksPage;
+let page;
 
-describe("books ", () => {
+describe("Book page tests", () => {
   beforeEach(() => {
-    cy.visit("https://oz.by/books/");
+    page = cy.visit("https://oz.by/books/");
     booksPage = new BooksPage();
-    cy.fixture("example").then((data) => {
-      userdata = data;
+    cy.fixture("pagedata").then((data) => {
+      pagedata = data;
     });
   });
 
-  it("bestsellers", () => {
+  it("Сheck the book according to the set parameters", () => {
     booksPage.setYear();
     booksPage.setCover();
     booksPage.setLanguage();
@@ -20,15 +21,15 @@ describe("books ", () => {
     booksPage.checkTopFilter();
   });
 
-  it("books list", () => {
+  it("Check books list", () => {
     booksPage.checkBooksList();
-    booksPage.checkBooks(userdata.fiction);
-    booksPage.checkBooks(userdata.fantasyScienceFiction);
+    booksPage.checkBooks(pagedata.fiction);
+    booksPage.checkBooks(pagedata.fantasyScienceFiction);
   });
 
-  it("autors", () => {
+  it("Validating author input and result", () => {
     booksPage.checkFirstAuthor();
-    booksPage.setAuthor(userdata.AgathaChristie);
+    booksPage.setAuthor(pagedata.AgathaChristie);
     booksPage.clickApplyBtn();
     booksPage.checkTopFilter();
   });
