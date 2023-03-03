@@ -3,7 +3,7 @@
   "bestsellers": "Бестселлеры",
   "new": "Новинки",
   "comingSoon": "Скоро в продаже",
-  "souvenirHeader": "Сувениры, галантерея, одежда" ,
+  "souvenirHeader": "Сувениры, галантерея, одежда",
   "fiction": "Художественная литература",
   "fantasyScienceFiction": "Фэнтези и фантастика",
   "alreadyInCart": "Уже в корзине",
@@ -13,6 +13,7 @@
   "bonusProgram": "Бонусная программа",
   "reference": "Справка",
   "callRequest": "Закажите звонок",
-  "makeRequest": "Оформите заявку и оператор свяжется с вами"
-
+  "makeRequest": "Оформите заявку и оператор свяжется с вами",
+  "bijouterie": "Бижутерия",
+  "AgathaChristie": "Агата Кристи"
 }
