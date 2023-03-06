@@ -28,7 +28,7 @@ describe("Home page tests", () => {
     homePage.checkLoginPopup();
   });
 
-  it("Сheck help", () => {
+  it("Сheck help page", () => {
     homePage.checkSlider();
     homePage.selectTopPanelOption(pagedata.help, pagedata.reference);
   });
