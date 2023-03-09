@@ -1,6 +1,6 @@
 import BasePage from "./BasePage";
 
-class HomePage extends BasePage {
+class MainPage extends BasePage {
   searchField = ".top-panel__search__input.ui-autocomplete-input";
   searchBtn = ".top-panel__search__btn__item";
   breadcrumbList = "li[itemprop='itemListElement']";
@@ -32,7 +32,7 @@ class HomePage extends BasePage {
   }
 
   checkSlider() {
-    cy.get(this.sliderPagination).children().should("have.length", 12);
+    cy.get(this.sliderPagination).children().should("have.length", 10);
   }
 
   selectDropdown() {
@@ -44,4 +44,4 @@ class HomePage extends BasePage {
   }
 }
 
-export default HomePage;
+export default MainPage;
