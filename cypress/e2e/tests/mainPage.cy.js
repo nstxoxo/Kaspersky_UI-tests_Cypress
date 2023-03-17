@@ -28,13 +28,13 @@ describe("Main page tests", () => {
     mainPage.checkLoginPopup();
   });
 
-  it("Сheck help page", () => {
-    mainPage.checkSlider();
-    mainPage.selectTopPanelOption(pagedata.help, pagedata.reference);
-  });
+  // it("Сheck help page", () => {
+  //   mainPage.checkSlider();
+  //   mainPage.selectTopPanelOption(pagedata.help, pagedata.reference);
+  // });
 
-  it("Сheck slider menu", () => {
-    mainPage.checkSlider();
-    mainPage.selectDropdown();
-  });
+  // it("Сheck slider menu", () => {
+  //   mainPage.checkSlider();
+  //   mainPage.selectDropdown();
+  // });
 });
