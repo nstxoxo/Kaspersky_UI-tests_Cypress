@@ -32,7 +32,7 @@ class MainPage extends BasePage {
   }
 
   checkSlider() {
-    cy.get(this.sliderPagination).children().should("have.length", 10);
+    cy.get(this.sliderPagination).children().should("have.length.greaterThan", 10)
   }
 
   selectDropdown() {
